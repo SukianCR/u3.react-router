@@ -30,16 +30,27 @@ body > div {
   justify-content: center;
 }
 .red {
-  background-color: hotpink;
-  color: whitesmoke;
-}
-.blue {
-  background-color: #70d7ff;
-  color: whitesmoke;
+  background-color: rgba(255, 105, 180, 0.5);
+  box-shadow: 1em 1em 5em hotpink !important;
+  border-radius: 0.3em;
 }
 
-h1 {
-  color: whitesmokesmoke !important;
+.red > h1 {
+  color: rgb(216, 55, 136) !important;
+}
+.blue {
+  background-color: rgba(112, 214, 255, 0.5);
+  box-shadow: 1em 1em 5em #70d7ff !important;
+  border-radius: 0.3em;
+}
+
+.green {
+  box-shadow: 0.6em 1em 5em yellowgreen !important;
+  border-radius: 0.3em;
+  padding: 2em;
+}
+.blue > h1 {
+  color: #6dacc5 !important;
 }
 
 .hotpink {
@@ -51,7 +62,7 @@ h1 {
 }
 
 .hotgreen {
-  text-shadow: 0 0.6em 0.6em yellowgreen !important;
+  text-shadow: 0 0.6em 0.7em yellowgreen !important;
 }
 
 .hotpinkP {
@@ -59,6 +70,9 @@ h1 {
 }
 .hotblueP {
   color: #70d7ff !important;
+}
+.hotgreenP {
+  color: yellowgreen !important;
 }
 
 .redText:hover,
@@ -90,7 +104,7 @@ nav > * {
 nav > div {
   display: flex !important;
   /*flex-direction: row-reverse !important;*/
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .navbar-dark,
