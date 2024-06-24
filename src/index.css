@@ -7,13 +7,7 @@ body > div {
   height: 100vh;
   width: 100vw;
 }
-body {
-  /* background-color: #050505;
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png"); */
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
+
 #container {
   height: 100%;
   display: flex;
@@ -36,10 +30,83 @@ body {
   justify-content: center;
 }
 .red {
-  background-color: #b05f6d;
-  color: white;
+  background-color: hotpink;
+  color: whitesmoke;
 }
 .blue {
-  background-color: #275db3;
-  color: white;
+  background-color: #70d7ff;
+  color: whitesmoke;
 }
+
+h1 {
+  color: whitesmokesmoke !important;
+}
+
+.hotpink {
+  text-shadow: 0 0.6em 0.6em hotpink !important;
+}
+
+.hotblue {
+  text-shadow: 0 0.6em 0.6em #70d7ff !important;
+}
+
+.hotgreen {
+  text-shadow: 0 0.6em 0.6em yellowgreen !important;
+}
+
+.hotpinkP {
+  color: hotpink !important;
+}
+.hotblueP {
+  color: #70d7ff !important;
+}
+
+.redText:hover,
+.redText:active {
+  color: hotpink !important;
+}
+.blueText:hover,
+.blueText:active {
+  color: #70d7ff !important;
+}
+
+body {
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/snow.png") !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  color: whitesmoke !important;
+}
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #container {
+    margin-top: -58.59px;
+  }
+}
+nav > * {
+  margin-top: 3em;
+  font-size: 1.2em;
+}
+nav > div {
+  display: flex !important;
+  /*flex-direction: row-reverse !important;*/
+  justify-content: center;
+}
+
+.navbar-dark,
+.bg-dark {
+  background-color: transparent !important;
+}
+
+nav > div > ul > li {
+  padding: 0.2em 1em;
+}
+
+#main-section {
+  padding-top: 3em;
+}
+
+/*
+.navbar .nav-link {
+  color: #fff !important;
+}*/
